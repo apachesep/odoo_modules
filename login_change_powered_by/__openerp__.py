@@ -26,8 +26,10 @@
     'version': '1.0',
     'category': 'Tools',
     'sequence': 10,
-    'author': 'Elico',
-    'website': 'www.elico-corp.cpm',
+    'author': 'LIN Yu',
+    'website': 'lin-yu.net',
+    'price': 5.0,
+    'currency': 'USD',
     # 'depends': ['web', 'website'],
     # if website not installed, should not depend 
     'depends': ['web'],
