@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template id="login_change_powered_by.menu_secondary" inherit_id="web.menu_secondary"
+                  name="powered by elico">
+            <xpath expr="//div[@class='oe_footer']" position="replace">
+                <div class="oe_footer">
+                    Powered by <a href="http://www.cdrj.com" target="_blank"><span> 生产库房信息管理系统</span></a>
+                </div>
+            </xpath>
+            <xpath expr="//a[@class='oe_logo']" position="replace">
+                <a class="oe_logo" t-att-href="'/web/?debug' if debug else '/web'">
+                    <span class="oe_logo_edit">Edit Company data</span>
+                    <img src='/login_change_powered_by/static/src/img/logo.png'/>
+                </a>
+            </xpath>
+            
+        </template>
+
+
+        <template id="login_change_powered_by.login_layout" inherit_id="web.login_layout" name="Login Layout">
+            <xpath expr="//div[@class='oe_single_form_footer']/a" position="replace">
+                <a href="https://www.cdrj.com" target="_blank">Powered by <span>生产库房信息管理系统</span></a>
+            </xpath>
+        </template>
+
+        <!-- remove create wbsite with odoo -->
+        <!-- comment for database does not have website module  -->
+        <!-- <template id="login_change_powered_by.layout_footer_copyright" inherit_id="website.layout_footer_copyright" name="Footer Copyright">
+            <xpath expr="//div[@class='pull-right']" position="replace">
+            </xpath>
+        </template> -->
+
+    </data>
+</openerp>
+<!-- todo -->
+<!-- <template id="support_page" name="Livechat Support Page">
+        <body>
+                     <div class="main" style="opacity: 1;">
+                        <h1 class="channel_name"><t t-esc="channel_name"/></h1>
+                        <div>Live Chat Powered by <strong>Odoo</strong>.</div>
+                    </div>
+                </body>
+            </html>
+        </template>
+    </data>
+</openerp>
+
+/Users/uynil/vagrant/odoo/odoo/inter/odoo8/addons/im_livechat/views/im_livechat.xml:
+   67                       <div class="main" style="opacity: 1;">
+   68                          <h1 class="channel_name"><t t-esc="channel_name"/></h1>
+   69:                         <div>Live Chat Powered by <strong>Odoo</strong>.</div>
+   70                      </div>
+   71                  </body>
+
+
+
+/Users/uynil/vagrant/odoo/odoo/inter/odoo8/addons/website_event/views/website_event.xml:
+  442        <div class="container mt16 mb8">
+  443            <div class="pull-right" t-ignore="true" t-if="not editable">
+  444:             Powered by <a class="label label-danger" href="http://www.odoo.com/page/website-builder">Odoo</a>.
+  445              Try the <a href="http://www.odoo.com/page/website-builder">open source website builder</a>.
+  446            </div>
+
+/Users/uynil/vagrant/odoo/odoo/inter/odoo8/addons/website_quote/views/website_quotation.xml:
+  533            <div class="container mt16 mb8">
+  534                <div class="pull-right" t-ignore="true" t-if="not editable">
+  535:                   Powered by <a class="label label-danger" href="http://www.odoo.com/page/website-builder">Odoo</a>,
+  536                    an awesome <a href="http://www.odoo.com/page/crm">Open Source CRM</a>.
+  537                </div>
+
+/Users/uynil/vagrant/odoo/odoo/inter/odoo8/addons/website_sale/data/demo.xml:
+  384                              <div class="col-md-5 col-md-offset-1 mt64">
+  385                                  <p class="text-muted">
+  386:                                     Powered by fourth-generation Intel Core processors, this iMac is the fastest yet. Every model in the lineup comes standard with a quad-core Intel Core i5 processor, starting at 2.7GHz and topping out at 3.4GHz.
+  387                                  </p><p class="text-muted">
+  388                                      And at the Apple Online Store, you can configure your iMac with an even more powerful Intel Core i7 processor, up to 3.5GHz.
+
+/Users/uynil/vagrant/odoo/odoo/inter/odoo8/addons/website_sale/views/templates.xml:
+ 1209          <div class="container mt16 mb8">
+ 1210              <div class="pull-right" t-ignore="true" t-if="not editable">
+ 1211:                 Powered by <a class="label label-danger" href="http://www.odoo.com/page/website-builder">Odoo</a>,
+ 1212                  the #1 <a href="http://www.odoo.com/page/e-commerce">Open Source eCommerce</a>.
+ 1213              </div> -->
